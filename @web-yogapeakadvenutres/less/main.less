@@ -1,0 +1,155 @@
+/* IMPORT: LESS */
+@import url('variables.less');
+@import url('mixins.less');
+
+/* IMPORT: FONT-FACE */
+@font-face {
+    font-family: '../fonts/aqua_grotesqueregular';
+    src: url('../fonts/aqua-webfont.eot');
+    src: url('../fonts/aqua-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/aqua-webfont.woff2') format('woff2'),
+         url('../fonts/aqua-webfont.woff') format('woff'),
+         url('../fonts/aqua-webfont.ttf') format('truetype'),
+         url('../fonts/aqua-webfont.svg#aqua_grotesqueregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*** TYPOGRAPHY ***/
+
+body {
+	color: @black;
+	font-family: @font-family-body;
+	font-size: 2em;
+}
+
+/*** BODY ***/
+body {
+	//background-image: url('../img/yoga-peak-adventures-home.png') no-repeat center center fixed;
+	background: url(../img/opt2.jpeg) no-repeat center center fixed;
+	//background-image: url('../img/opt3.jpeg') no-repeat center center fixed;
+	//background-image: url('../img/opt4.jpeg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+
+/*** HEADER ***/
+.jumbotron {
+	background-color: none;
+}
+
+h1, p {
+	text-align: center;
+}
+
+h1 {
+	margin: .75em auto 1em;
+	font-family: @font-header;
+}
+
+h2 {
+	font-size: 1em;
+}
+
+p {
+	margin: 1.25em auto .75em;
+	max-width: 90%;
+	font-size: .75em;
+}
+
+.fa {
+	margin: 8px;
+	font-size: 1.75em;
+	color: @white;
+}
+
+.fa:hover {
+	color: @smokeyblue;
+}
+
+/*** MAIN ***/
+
+/*** FORM ELEMENTS ***/
+
+form {
+	width: 95%;
+	margin: 40px auto;
+	text-align: center;
+}
+
+input {
+	width: 175px;
+	height: 45px;
+	font-size: .75em;
+}
+
+input[type="email"] {
+	margin-bottom: 20px;	
+	padding-left: 8px;
+	text-align: center;
+}
+
+/* input[type="email"]:focus {
+
+} */
+
+input[type="submit"] {
+	background-color: @black;
+	border: none;
+	border-radius: 5px;
+	color: #fff;
+	transition: all 0.3s ease 0s;
+	-moz-transition: all 0.3s ease 0s;
+	-webkit-transition: all 0.3s ease 0s;
+}
+
+input[type="submit"]:hover {
+	background-color: @smokeyblue;
+}
+
+/*** MEDIA QUERIES ***/
+@media (min-width: 445px) {
+	
+	form {
+		margin-top: 50px;
+	}
+
+	input[type="email"] {
+		margin-right: 15px;
+	}
+
+	input[type="submit"] {
+		margin-left: 15px;
+	}
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+	h1 {
+		font-size: 2.25em;
+	}
+
+	h2 {
+		font-size: 1.5em;
+	}
+
+	p {
+		max-width: 500px;
+		font-size: .8em;
+	}
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+/*@media (min-width: 992px) { 
+
+}*/
+
+/* Large devices (large desktops, 1200px and up) */
+/*@media (min-width: 1200px) {
+
+}*/
