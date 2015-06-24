@@ -1,3 +1,128 @@
 /* IMPORT: LESS */
-@font-face{font-family:'../fonts/aqua_grotesqueregular';src:url('../fonts/aqua-webfont.eot');src:url('../fonts/aqua-webfont.eot?#iefix') format('embedded-opentype'),url('../fonts/aqua-webfont.woff2') format('woff2'),url('../fonts/aqua-webfont.woff') format('woff'),url('../fonts/aqua-webfont.ttf') format('truetype'),url('../fonts/aqua-webfont.svg#aqua_grotesqueregular') format('svg');font-weight:400;font-style:normal}body{color:#212026;font-family:'Raleway',Helvetica,arial,sans-serif;font-size:2em}body{background:url(../img/opt2.jpeg) no-repeat center center fixed;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover}.jumbotron{background-color:none}h1,p{text-align:center}h1{margin:.75em auto 1em;font-family:'aqua_grotesqueregular',Helvetica,arial,sans-serif}h2{font-size:1em}p{margin:1.25em auto .75em;max-width:90%;font-size:.75em}.fa{margin:8px;font-size:1.75em;color:#fff}.fa:hover{color:#3d4f7e}form{width:95%;margin:40px auto;text-align:center}input{width:175px;height:45px;font-size:.75em}input[type="email"]{margin-bottom:20px;padding-left:8px;text-align:center}input[type="submit"]{background-color:#212026;border:0;border-radius:5px;color:#fff;transition:all .3s ease 0s;-moz-transition:all .3s ease 0s;-webkit-transition:all .3s ease 0s}input[type="submit"]:hover{background-color:#3d4f7e}@media (min-width: 445px){form{ margin-top:50px}input[type="email"]{margin-right:15px}input[type="submit"]{margin-left:15px}}@media (min-width: 768px){h1{ font-size:2.25em}h2{font-size:1.5em}p{max-width:500px;font-size:.8em}}
-/* This beautiful CSS-File has been crafted with LESS (lesscss.org) and compiled by simpLESS (wearekiss.com/simpless) */
+/* IMPORT: LESS */
+/* VARIABLES: LESS */
+/* MIXINS: LESS *//* IMPORT: FONT-FACE */
+@font-face {
+  font-family: 'arca_majoraheavy';
+  src: url('../fonts/arca-heavy-webfont.eot');
+  src: url('../fonts/arca-heavy-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/arca-heavy-webfont.woff2') format('woff2'), url('../fonts/arca-heavy-webfont.woff') format('woff'), url('../fonts/arca-heavy-webfont.ttf') format('truetype'), url('../fonts/arca-heavy-webfont.svg#arca_majoraheavy') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/*** TYPOGRAPHY ***/
+body {
+  color: #2a3d4d;
+  font-family: 'Raleway', Helvetica, arial, sans-serif;
+}
+/*** BODY ***/
+body {
+  background: url(../img/opt2.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/*** HEADER ***/
+.jumbotron {
+  background-color: none;
+}
+h1,
+p {
+  text-align: center;
+}
+h1 {
+  margin: .15em auto .5em;
+  font-family: 'arca_majoraheavy', Helvetica, arial, sans-serif;
+  font-size: 2.5em;
+}
+h2 {
+  font-size: 1.25em;
+  text-transform: uppercase;
+}
+p {
+  margin: 1.5em auto .75em;
+  max-width: 85%;
+}
+.fa {
+  margin: 8px;
+  font-size: 1.75em;
+  color: #e1e5e6;
+}
+.fa:hover {
+  color: #85a2c7;
+  transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+}
+/*** MAIN ***/
+/*** FORM ELEMENTS ***/
+form {
+  width: 85%;
+  max-width: 350px;
+  margin: 35px auto;
+  padding: 10px 0;
+  text-align: center;
+  background-color: rgba(225, 229, 230, 0.5);
+}
+form p {
+  margin-top: 0px;
+}
+input {
+  width: 175px;
+  height: 45px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  text-align: center;
+}
+input[type="email"],
+input[type="text"] {
+  background-color: #e1e5e6;
+}
+input[type="submit"] {
+  background-color: #2a3d4d;
+  color: #e1e5e6;
+  transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+}
+input[type="submit"]:hover {
+  background-color: #e1e5e6;
+  color: #2a3d4d;
+}
+/*** MEDIA QUERIES ***/
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  h1 {
+    font-size: 2.8em;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+  p {
+    width: 80%;
+    max-width: 700px;
+    font-size: 1.15em;
+  }
+  form {
+    width: 55%;
+  }
+}
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  h1 {
+    font-size: 3.15em;
+  }
+  h2 {
+    font-size: 1.75em;
+  }
+  p {
+    max-width: 650px;
+    font-size: 1.3em;
+  }
+}
+/* Large devices (large desktops, 1200px and up) */
+/*@media (min-width: 1200px) {
+
+}*/
