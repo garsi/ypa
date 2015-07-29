@@ -1,0 +1,187 @@
+
+/* IMPORT: LESS */
+@import url('variables.less');
+@import url('mixins.less');
+
+/* IMPORT: FONT-FACE */
+@font-face {
+    font-family: 'arca_majoraheavy';
+    src: url('../fonts/arca-heavy-webfont.eot');
+    src: url('../fonts/arca-heavy-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/arca-heavy-webfont.woff2') format('woff2'),
+         url('../fonts/arca-heavy-webfont.woff') format('woff'),
+         url('../fonts/arca-heavy-webfont.ttf') format('truetype'),
+         url('../fonts/arca-heavy-webfont.svg#arca_majoraheavy') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*** TYPOGRAPHY ***/
+
+
+/*** BODY ***/
+body {
+	padding-top: 50px; 
+	padding-bottom: 20px;
+	color: @NightSky;
+	font-family: @font-family-body;
+	//background-image: url('../img/yoga-peak-adventures-home.png') no-repeat center center fixed;
+	//background: url(http://katgarsi.com/yogapeakadventures/img/main-peaks.jpg) no-repeat center center fixed;
+	background: url(../img/main-peaks_lg.png) no-repeat center center fixed;
+	//background-image: url('../img/opt3.jpeg') no-repeat center center fixed;
+	//background-image: url('../img/opt4.jpeg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+
+/*** HEADER ***/
+.jumbotron {
+	background-color: none;
+}
+
+h1, p {
+	text-align: center;
+}
+
+h1 {
+	margin: .15em auto .5em;
+	font-family: @font-header;
+	font-size: 2.5em;
+}
+
+h2 {
+	font-size: 1.25em;
+	text-transform: uppercase;
+}
+
+p {
+	margin: 1.5em auto .75em;
+	max-width: 85%;	
+}
+
+/* IMAGES & ICONS */
+img {
+	width: 50px;
+}
+
+p .logo {
+	margin-top: 5px;
+}
+
+.fa {
+	margin: 8px;
+	font-size: 1.75em;
+	color: @Peace;
+}
+
+.fa:hover {
+	color: @Himalaya;
+	transition: all 0.3s ease 0s;
+	-moz-transition: all 0.3s ease 0s;
+	-webkit-transition: all 0.3s ease 0s;
+}
+
+
+/*** MAIN ***/
+/*** FORM ELEMENTS ***/
+
+form {
+	width: 85%;
+	max-width: 350px;
+	margin: 35px auto;
+	padding: 10px 0;
+	text-align: center;
+	background-color: rgba(225,229,230,.5);
+
+	p {
+		margin-top: 0px;
+	}
+}
+
+input {
+	width: 175px;
+	height: 45px;
+	margin-bottom: 10px;
+	border: none;
+	border-radius: 5px;
+	font-size: 1em;
+	text-align: center;
+}
+
+input[type="email"], input[type="text"] {	
+	background-color: @Peace;
+}
+
+input[type="submit"] {
+	background-color: @GlacialLake;
+	//color: @Peace;
+	transition: all 0.3s ease 0s;
+	-moz-transition: all 0.3s ease 0s;
+	-webkit-transition: all 0.3s ease 0s;
+}
+
+input[type="submit"]:hover {
+	background-color: @Peace;
+	color: @NightSky;
+}
+
+
+
+/*** MEDIA QUERIES ***/
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	body {
+		background: url(../img/main-peaks_sm.png) no-repeat center center fixed;
+	}
+
+	h1 {
+		font-size: 2.8em;
+	}
+
+	h2 {
+		font-size: 1.5em;
+	}
+
+	p {
+		width: 80%;
+		max-width: 700px;
+		font-size: 1.15em;
+	}
+
+	form {
+		width: 55%;
+	}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+	body {
+		background: url(../img/main-peaks_md.png) no-repeat center center fixed;
+	}
+
+	h1 {
+		font-size: 3.15em
+	}
+
+	h2 {
+		font-size: 1.75em
+	}
+
+	p {
+		max-width: 650px;
+		font-size: 1.3em;
+	}
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+	body {
+		background: url(../img/main-peaks_lg.png) no-repeat center center fixed;
+	}
+
+}
