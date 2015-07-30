@@ -1,7 +1,72 @@
 /* IMPORT: LESS */
 /* IMPORT: LESS */
 /* VARIABLES: LESS */
-/* MIXINS: LESS *//* IMPORT: FONT-FACE */
+/* MIXINS: LESS *//*** RESPONSIVE BACKGROUND IMAGE WITH MEDIA QUERIES***/
+/* Small screen, non-retina, DEFAULT */
+body {
+  background-color: #5e688f;
+  background: url(../img/main-peaks_sm_1x.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* Small screen, retina */
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 320px), only screen and (min--moz-device-pixel-ratio: 2) and (min-width: 320px), only screen and (-o-min-device-pixel-ratio: 0.5) and (min-width: 320px), only screen and (min-device-pixel-ratio: 2) and (min-width: 320px), only screen and (min-resolution: '192dpi') and (min-width: 320px), only screen and (min-resolution: '2dppx') and (min-width: 320px) {
+  body {
+    background-color: #5e688f;
+    background: url(../img/main-peaks_sm_2x.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+}
+/* Medium screen, non-retina */
+@media only screen and (min-width: 768px) {
+  body {
+    background-color: #5e688f;
+    background: url(../img/main-peaks_md_1x.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+}
+/* Medium screen, retina */
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), only screen and (min--moz-device-pixel-ratio: 2) and (min-width: 768px), only screen and (-o-min-device-pixel-ratio: 0.5) and (min-width: 768px), only screen and (min-device-pixel-ratio: 2) and (min-width: 768px), only screen and (min-resolution: '192dpi') and (min-width: 768px), only screen and (min-resolution: '2dppx') and (min-width: 768px) {
+  body {
+    background-color: #5e688f;
+    background: url(../img/main-peaks_md_2x.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+}
+/* Large screen, non-retina */
+@media only screen and (min-width: 1200px) {
+  body {
+    background-color: #5e688f;
+    background: url(../img/main-peaks_lg_1x.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+}
+/* Large screen, retina */
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px), only screen and (min--moz-device-pixel-ratio: 2) and (min-width: 1200px), only screen and (-o-min-device-pixel-ratio: 0.5) and (min-width: 1200px), only screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), only screen and (min-resolution: '192dpi') and (min-width: 1200px), only screen and (min-resolution: '2dppx') and (min-width: 1200px) {
+  body {
+    background-color: #5e688f;
+    background: url(../img/main-peaks_lg_2x.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+}
+/* IMPORT: FONT-FACE */
 @font-face {
   font-family: 'arca_majoraheavy';
   src: url('../fonts/arca-heavy-webfont.eot');
@@ -16,11 +81,6 @@ body {
   padding-bottom: 20px;
   color: #2a3d4d;
   font-family: 'Raleway', Helvetica, arial, sans-serif;
-  background: url(../img/main-peaks_lg.png) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 }
 /*** HEADER ***/
 .jumbotron {
@@ -97,12 +157,9 @@ input[type="submit"]:hover {
   background-color: #e1e5e6;
   color: #2a3d4d;
 }
-/*** MEDIA QUERIES ***/
+/*** MEDIA QUERIES STYLES ***/
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  body {
-    background: url(../img/main-peaks_sm.png) no-repeat center center fixed;
-  }
   h1 {
     font-size: 2.8em;
   }
@@ -120,9 +177,6 @@ input[type="submit"]:hover {
 }
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  body {
-    background: url(../img/main-peaks_md.png) no-repeat center center fixed;
-  }
   h1 {
     font-size: 3.15em;
   }
@@ -135,8 +189,7 @@ input[type="submit"]:hover {
   }
 }
 /* Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-  body {
-    background: url(../img/main-peaks_lg.png) no-repeat center center fixed;
-  }
-}
+/*@media (min-width: 1200px) {
+
+
+}*/

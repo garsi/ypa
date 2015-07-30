@@ -2,6 +2,7 @@
 /* IMPORT: LESS */
 @import url('variables.less');
 @import url('mixins.less');
+@import url('responsive-backgrounds.less');
 
 /* IMPORT: FONT-FACE */
 @font-face {
@@ -25,15 +26,6 @@ body {
 	padding-bottom: 20px;
 	color: @NightSky;
 	font-family: @font-family-body;
-	//background-image: url('../img/yoga-peak-adventures-home.png') no-repeat center center fixed;
-	//background: url(http://katgarsi.com/yogapeakadventures/img/main-peaks.jpg) no-repeat center center fixed;
-	background: url(../img/main-peaks_lg.png) no-repeat center center fixed;
-	//background-image: url('../img/opt3.jpeg') no-repeat center center fixed;
-	//background-image: url('../img/opt4.jpeg') no-repeat center center fixed;
-    -webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
 }
 
 
@@ -130,13 +122,10 @@ input[type="submit"]:hover {
 
 
 
-/*** MEDIA QUERIES ***/
+/*** MEDIA QUERIES STYLES ***/
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-	body {
-		background: url(../img/main-peaks_sm.png) no-repeat center center fixed;
-	}
 
 	h1 {
 		font-size: 2.8em;
@@ -159,9 +148,6 @@ input[type="submit"]:hover {
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
-	body {
-		background: url(../img/main-peaks_md.png) no-repeat center center fixed;
-	}
 
 	h1 {
 		font-size: 3.15em
@@ -179,9 +165,8 @@ input[type="submit"]:hover {
 }
 
 /* Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-	body {
-		background: url(../img/main-peaks_lg.png) no-repeat center center fixed;
-	}
+/*@media (min-width: 1200px) {
 
-}
+
+}*/
+
